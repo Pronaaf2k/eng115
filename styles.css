@@ -159,6 +159,7 @@ h4 {
 .discussion-grid article,
 .symbol-list article,
 .comparison-grid article,
+.context-grid article,
 .thesis-list p {
   color: var(--body-copy);
   border: 1px solid rgba(255, 235, 198, 0.16);
@@ -241,28 +242,32 @@ blockquote {
 .story-grid,
 .essay-layout,
 .discussion-grid,
-.comparison-grid {
+.comparison-grid,
+.context-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
 }
 
 .discussion-grid,
-.comparison-grid {
+.comparison-grid,
+.context-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .story-grid article,
 .essay-layout article,
 .discussion-grid article,
-.comparison-grid article {
+.comparison-grid article,
+.context-grid article {
   padding: 1.35rem;
 }
 
 .story-grid h3,
 .essay-layout h3,
 .discussion-grid h3,
-.comparison-grid h3 {
+.comparison-grid h3,
+.context-grid h3 {
   color: var(--accent-dark);
   font-size: 1.2rem;
 }
@@ -270,9 +275,14 @@ blockquote {
 .story-grid p,
 .essay-layout p,
 .discussion-grid p,
-.comparison-grid p {
+.comparison-grid p,
+.context-grid p {
   color: var(--card-muted);
   font-family: Arial, sans-serif;
+}
+
+.context-grid p + p {
+  margin-top: 0.85rem;
 }
 
 .symbol-list {
@@ -330,7 +340,8 @@ footer {
   .essay-layout,
   .discussion-grid,
   .symbol-list,
-  .comparison-grid {
+  .comparison-grid,
+  .context-grid {
     grid-template-columns: 1fr;
   }
 
@@ -364,6 +375,7 @@ footer {
   .discussion-grid article,
   .symbol-list article,
   .comparison-grid article,
+  .context-grid article,
   .thesis-list p {
     border-radius: 1rem;
   }
